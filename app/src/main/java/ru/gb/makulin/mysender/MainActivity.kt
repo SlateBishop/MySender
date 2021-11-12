@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
                 text = "Пустое сообщение"
             }
             intent = Intent(this, SenderService::class.java)
-            intent.putExtra(MSG_EXTRA,text)
+            intent.putExtra(MSG_EXTRA, text)
             intent.action = INTENT_ACTION
             startService(intent)
         }
